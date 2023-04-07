@@ -1,0 +1,33 @@
+/* dataTables CSS modification & positioning */
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc:before {
+  content: "" !important;
+}
+
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc_disabled:before {
+  content: "\F145" !important;
+  font-family:'Bootstrap-icons';
+}
+
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:after {
+  content: "\F124" !important;
+  font-family:'Bootstrap-icons';
+}
+
+table.dataTable thead>tr>th.sorting:before,
+table.dataTable thead>tr>th.sorting_asc:before {
+  font-size: 1em;
+  bottom: 35%;
+}
+
+table.dataTable thead>tr>th.sorting:after,
+table.dataTable thead>tr>th.sorting_desc:after {
+  font-size: 1em;
+  top: 45%;
+}
